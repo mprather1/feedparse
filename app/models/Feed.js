@@ -6,16 +6,6 @@ const Feed = Backbone.Model.extend({
   },
 
   parse: function (response) {
-    console.log(response)
-    // const createdAt = moment(response.created_at)
-
-    // const object = {
-    //   id: response.id,
-    //   name: response.name,
-    //   attribute: response.attribute,
-    //   created_at: createdAt.format('YYYY-MM-DD hh:mm:ss A')
-    // }
-
     return response
   }
 })
