@@ -1,0 +1,16 @@
+apps:
+  - script: ./build/server.js
+    name: 'bbps'
+    watch: true
+    env:
+      NODE_ENV: development
+      TZ: 'America/Chicago'
+      PORT: 8000
+      POSTGRES_DB: api_production
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      DATABASE_URL: 'postgres://postgres:postgres@db:5432/api_production'
+      REDIS_STORE_URI: 'redis://localhost:6379'
+      REDIS_STORE_SECRET: secret
+    env_production:
+      NODE_ENV: production
