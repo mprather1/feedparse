@@ -4,7 +4,7 @@ import request from 'request'
 const queries = {}
 
 export default function getAllRoutes (options) {
-  queries.getAllModels = (req, res, next) => {
+  queries.getAllFeeds = (req, res, next) => {
     var reqf = request('http://feeds.bbci.co.uk/news/rss.xml')
     var feedparser = new FeedParser()
 

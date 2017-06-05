@@ -1,5 +1,5 @@
-import models from './models'
+import feeds from './feeds'
 
 export {
-  models
+  feeds
 }
