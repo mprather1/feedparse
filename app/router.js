@@ -7,10 +7,7 @@ const Router = Marionette.AppRouter.extend({
   },
 
   appRoutes: {
-    '': 'index',
-    'form': 'formRoute',
-    'page/:page': 'page',
-    'login': 'loginRoute'
+    '': 'index'
   }
 })
 
